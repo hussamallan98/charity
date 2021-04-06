@@ -1,0 +1,385 @@
+@font-face {
+    font-family: myfont;
+    src: url(../Fonts/font1/AlegreyaSansSC-Thin.ttf);
+  }
+  @font-face {
+    font-family: myfont2;
+    src: url(../Fonts/lato-font/Lato-Light.ttf);
+    font-weight: bold;
+  }
+
+
+  
+/*-----------------Nav BAR----------------*/
+.navbar
+{
+    width: 100%;
+    height:65px;
+    min-width: 660px;
+    background-color: black;
+    position: fixed;
+    padding: 0px;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    
+    z-index: 5;
+    box-shadow: 10px 10px 10x black;
+   
+
+}
+.logo
+{
+  margin-top: -24px;
+  padding-top: 10px;
+ height: 80px;   
+ transition: all .5s ease-in-out;
+ animation: heart 2s infinite ease-in-out;
+
+
+}
+
+@keyframes heart
+{
+0%,100%
+{
+    transform: scale(1);
+}
+50%
+{
+    transform: scale(1.2);
+}
+
+}
+
+
+
+.hvr-bounce-to-bottom
+{
+    padding-top:10px ;
+    font-family: myfont;
+    display:inline-block;    
+    position:relative; 
+    width:18%;
+    border: none;
+    height: 100%;
+    background-color: none;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.562) ;
+    transition: all .5s ease-in-out;
+
+}
+
+.hvr-bounce-to-bottom:before
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgb(150, 20, 11);
+   transform:scaleY(0);
+   transform-origin:top ;
+   transition-duration:.5s;
+    
+    
+   
+   
+    
+    
+}
+.hvr-bounce-to-bottom:active,.hvr-bounce-to-bottom:focus,.hvr-bounce-to-bottom:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+
+}
+.hvr-bounce-to-bottom:active:before,.hvr-bounce-to-bottom:focus:before,.hvr-bounce-to-bottom:hover:before
+{
+  
+   
+    transform:scaleY(1);
+}
+/*-----------------Nav BAR----------------*/
+/* 
+*/
+/*-----------------slider----------------*/
+.sliders
+{
+    /*
+    -webkit-box-shadow: 10px 10px;
+    -moz-box-shadow: 10px 10px;
+    */
+    max-height: 600px;
+    width: 100%;
+    min-width: 660px;    
+    box-shadow: 10px 10px;
+    
+    
+
+}
+
+
+.paragraph
+{
+    background-color:rgba(255, 255, 255, 0.562);
+    opacity: .3;
+    max-width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 1;
+    border-radius:0px 50px 0px 50px;
+    padding: 30px 10px 10px 10px;
+    font-size: 5px;
+    font-family: myfont2;
+    color:rgb(150, 20, 11);
+    font-weight: bolder;
+    text-align: center;
+    overflow: hidden;
+}
+/*-----------------slider----------------*/
+
+/*-----------------Features----------------*/
+.features
+{
+    padding: 30px 20px 20px 20px;
+    background-color: white;
+    font-family: myfont2;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border-top: 3px solid rgb(150, 20, 11);
+
+    
+}
+.f1,.f2,.f3
+{
+    text-align: center;
+    height: 300px;
+}
+
+.f1,.f3
+{
+    margin-top: 100px;
+}
+
+i
+{
+    font-size: 100px;
+    margin: 5px 0px 40px 0px;
+    color: rgb(150, 20, 11);
+    text-shadow: 5px 8px 10px black;
+   
+
+}
+.features h3
+{
+    text-shadow: 3px 2px 5px black;
+    
+
+}
+
+.features span
+{
+font-size: 18px;
+}
+.f-title
+{
+margin:20px 0px  50px 0px;
+}
+.f-title img
+{
+    display: inline-block;
+    margin: -15px 8px 0px 8px;
+
+}
+.f-title h1
+{
+    display: inline-block;
+    text-shadow: 3px 2px 5px black;
+   -webkit-text-shadow: 3px 2px 5px black;
+   -moz-text-shadow: 3px 2px 5px black;
+
+}
+
+.hand
+{
+    height: 50px;
+    width: 50px;
+    margin-bottom: -65px;
+}
+/*-----------------Features----------------*/
+
+
+
+
+
+/*-----------------About----------------*/
+
+.about
+{
+    background-color: #929292;
+    border-top: 3px solid rgb(150, 20, 11);
+    padding: 30px 20px 20px 20px;
+    font-family: myfont2;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    width: 100%;
+
+}
+.about-span1
+{
+    font-size: 50px;
+    color:rgb(150, 20, 11);
+}.about-span2
+{
+color:rgb(150, 20, 11);
+}
+.I-title
+{
+margin:20px 0px  50px 0px;
+}
+.I-title img
+{
+    display: inline-block;
+    margin: -15px 8px 0px 8px;
+
+}
+.I-title h1
+{
+    display: inline-block;
+   text-shadow: 3px 2px 5px black;
+   -webkit-text-shadow: 3px 2px 5px black;
+   -moz-text-shadow: 3px 2px 5px black;
+
+
+}
+.left-about
+{
+    font-family: myfont;
+    text-align: justify;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    padding-top: 80px;
+}
+.right-about
+{
+   text-align: center;
+   height: 400px;
+   
+
+}
+.right-about img
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid rgb(150, 20, 11);
+    box-shadow: -4px 9px 10px black;
+    
+    transition: all 1s ease-in-out;
+   perspective: 600px;
+}
+
+#circle-image-1
+{
+    /*
+    animation: circle3 8s infinite linear;
+    to 3 circle
+    */
+    z-index: 2;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+   
+
+
+}
+
+#circle-image-1:hover
+{
+    z-index: 5;
+    position: absolute;
+    top: 10px;
+    transform: translateY(-50px) translateX(50px) scale(1.1);
+
+}
+
+#circle-image-2
+{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    z-index: 3;
+    left: 190px;
+    top: 140px;
+   
+    
+
+
+}
+#circle-image-2:hover
+{
+    z-index: 5;
+    position: absolute;
+    top: 10px;
+    transform: translateY(-50px) translateX(50px) scale(1.1);
+
+}
+#circle-image-3
+{
+    height: 200px;
+    width: 200px;
+    margin:-78px 0px 0px -12px;
+    height: 150px;
+    width: 150px;
+    z-index: 4;
+    bottom: 126px;
+    left: 85px;
+    position: absolute;
+   
+
+}
+
+.portals
+{
+    background-color: white;
+    border-top: 3px solid rgb(150, 20, 11);
+    padding: 30px 20px 20px 20px;
+    font-family: myfont2;
+    font-weight: bold;
+    text-align: center;
+    color:black;
+    width: 100%;
+    text-align: center;
+
+}
+.p-title
+{
+margin:20px 0px  50px 0px;
+}
+.p-title img
+{
+    display: inline-block;
+    margin: -15px 8px 0px 8px;
+
+}
+.p-title h1
+{
+    display: inline-block;
+    text-shadow: 3px 2px 5px black;
+    -webkit-text-shadow: 3px 2px 5px black;
+    -moz-text-shadow: 3px 2px 5px black;
+
+
+}
