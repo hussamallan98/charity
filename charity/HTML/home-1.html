@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -133,8 +134,8 @@
                                 <p>
                                     A dedicated portal for logging in or registering donors. Through this portal, you can see cases of charitable organizations 
                                 </p>
-                                <form action="signup-supporter.html">
-                                    <button type="submit" class="hvr-shutter-in-horizontal" formaction="login-supporter.html"> Log-In <i class="fas fa-arrow-circle-right  arrow"></i></button>
+                                <form action="signup-supporter.php">
+                                    <button type="submit" class="hvr-shutter-in-horizontal" formaction="login-supporter.php"> Log-In <i class="fas fa-arrow-circle-right  arrow"></i></button>
                                     <button type="submit" class="hvr-shutter-in-horizontal" > SignUp <i class="fas fa-plus  plus"></i></button>
                                  </form>
                             </div>
@@ -169,11 +170,11 @@
                 <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content circle-popup">
-                            <form action="admin-login.html">
+                            <form action="admin-login.php" method="POST">
                                 <h3 style="margin-top: 40px; font-family: myfont; font-weight: bold; margin-bottom: 40px;">Admin Login</h3>
-                                <input type="email" class="username" name="" placeholder="User Name" oninput="style=' letter-spacing:1px;'">
-                                <input type="password" class="pass" name="" placeholder="Password" oninput="style=' letter-spacing:1px;'" >
-                                <input type="submit" value="Go !" class="log">
+                                <input type="email" class="username" name="admin-email" placeholder="User Name" oninput="style=' letter-spacing:1px;'">
+                                <input type="password" class="pass" name="admin-password" placeholder="Password" oninput="style=' letter-spacing:1px;'" >
+                                <input type="submit" value="Go !" class="log" name="save">
                             </form>
                       </div>
                     </div>
@@ -192,8 +193,8 @@
                                 <p>
                                     A portal dedicated to logging in or registering for charities, through this portal you can add cases, view cases and communicate with donors .
                                 </p>
-                                <form action="../HTML/signup-charity.html">
-                                <button type="submit" class="hvr-shutter-in-horizontal" formaction="login-charity.html"> Log-In <i class="fas fa-arrow-circle-right  arrow"></i></button>
+                                <form action="../HTML/signup-charity.php">
+                                <button type="submit" class="hvr-shutter-in-horizontal" formaction="login-charity.php"> Log-In <i class="fas fa-arrow-circle-right  arrow"></i></button>
                                 <button type="submit" class="hvr-shutter-in-horizontal"> SignUp <i class="fas fa-plus  plus"></i></button>
                                 </form>
                             </div>
