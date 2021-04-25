@@ -12,9 +12,8 @@ if (isset($_POST['login'])) {
         $t=$sup->login($_POST['supporter-email'],$_POST['supporter-password']);
   
   if ($t[0]['supporter_id']) {
-    $_SESSION['supporter-id']=$t[0]['supporter_id'];
-    print_r($t);
-    die();
+    $_SESSION['supporter_id']=$t[0]['supporter_id'];
+    header("location:category-supporter.php");
    
     
       }else{
@@ -68,12 +67,12 @@ if (isset($_POST['login'])) {
     <form action="" method="post">
         <div class="form-group">
         <input type="email" class="username" name="supporter-email" placeholder="E-mail" oninput="style=' letter-spacing:1px;'">
-        <label>
-         <b><?php
+        
+         <?php
                     if (!empty($e)) {
                             echo $e;
                         }?>
-                </b></label>
+                
         <input type="password" class="pass" name="supporter-password" placeholder="Password"  oninput="style=' letter-spacing:1px;'">
         <input type="submit" value="Go !" class="log" name="login">
 
