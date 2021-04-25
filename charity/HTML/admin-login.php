@@ -12,8 +12,7 @@ if (isset($_POST['save'])) {
     $t=$admin->login($_POST['admin-email'],$_POST['admin-password']);
     if ($t[0]['admin_id']) {
     $_SESSION['admin-id']=$t[0]['admin_id'];
-    print_r($t);
-    die();
+    header("location:admin/manage-admin.php");
 }
 }
 ?>
