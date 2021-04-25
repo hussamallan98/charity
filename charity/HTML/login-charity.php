@@ -7,18 +7,17 @@ include("../includes/classes.php");
 $ch=new charity();
 if (isset($_POST['login'])) {
     if (empty($_POST['charity-email'])OR empty($_POST['charity-password'])) {
-        $e="<label style='color: rgb(150,20,11);'> *all Field Requierd </label>";
+        $e="<label style='color: rgb(150,20,11); '> *all Field Requierd </label>";
     }else{
   $t=$ch->login($_POST['charity-email'],$_POST['charity-password']);
   
   if ($t[0]['charity_id']) {
-    $_SESSION['charity-id']=$t[0]['charity_id'];
-    print_r($t);
-    die();
+    $_SESSION['id']=$t[0]['charity_id'];
+    header("location:profile.php");
    
     
       }else{
-    $e="<label style='color: rgb(150,20,11);'> *invalid  name or password </label>";
+    $e="<label style='color: rgb(150,20,11); '> *invalid  name or password </label>";
     
   }
 }
@@ -68,6 +67,12 @@ if (isset($_POST['login'])) {
     <form action="" method="post">
         <div class="form-group">
         <input type="email" class="username" name="charity-email" placeholder="E-mail" oninput="style=' letter-spacing:1px;'">
+
+            <?php
+                    if (!empty($e)) {
+                            echo $e;
+                        }?>
+               
 
         <input type="password" class="pass" name="charity-password" placeholder="Password" oninput="style=' letter-spacing:1px;'" >
         
