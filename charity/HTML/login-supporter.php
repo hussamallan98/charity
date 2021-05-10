@@ -3,7 +3,7 @@
 session_start();
 ob_start();
 
-include("../includes/classes.php");
+include("admin/includes/classes.php");
 $sup=new supporter();
 if (isset($_POST['login'])) {
     if (empty($_POST['supporter-email'])OR empty($_POST['supporter-password'])) {
@@ -52,7 +52,7 @@ if (isset($_POST['login'])) {
      <div>
     <nav class="navbar justify-content-start fixed-top" >
         <a class="navbar-brand" href="#"><img src="../Image/logo.png"  class="logo"  alt=""></a>
-        <a class="hvr-bounce-to-bottom nav-item active"  href="Home-1.php" >Home</a>
+        <a class="hvr-bounce-to-bottom nav-item active"  href="Home-1.php" style="color:#fff !important ;" >Home</a>
     </nav>
 </div>
 
